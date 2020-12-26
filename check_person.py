@@ -17,7 +17,13 @@ def callback(session):
 
     time.sleep(2)
     total = A["balance"] + B["balance"] +  C["balance"]
-    print("A : {} B : {} C : {} Total balance : {}".format(A["balance"], B["balance"], C["balance"], total))
+    print("A : {}  B : {}  C : {}  Total balance : {}".format(A["balance"], B["balance"], C["balance"], total))
+
+post01 = { "_id" : "accA", "balance" : 1000 }
+post02 = { "_id" : "accB", "balance" : 1000 }
+post03 = { "_id" : "accC", "balance" : 1000 }
+
+bank_accounts.insert_many([post01, post02, post03])
 
 while True:
     # Step 2: Start a client session.
