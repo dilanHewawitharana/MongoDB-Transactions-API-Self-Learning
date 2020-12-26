@@ -4,6 +4,8 @@ This small set of program demonstrate how to implement MongoDB transaction API w
 
 ## Description
 
+![](1.png)
+
 This is simple bank application that demonstrate the behavior of transaction API's when multiple programs trying to access same database element parallel.
 
 There are 3 person (A, B and C). Each person is trying to take some money from their account and transfer to others bank accounts.
